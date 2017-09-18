@@ -29,8 +29,8 @@ nav a:hover{
 
 /*style for the li tag in nav*/
 nav li{
-    margin-right: 40px;
-    margin-left: 45px;
+ 
+    margin-left: 4.5em;
     padding: 8px;
     display: inline-block;
 }
@@ -91,8 +91,8 @@ background-color:#E9897F;
 text-align: center;
 }
 
-/*style for the span tag in blog_summary class*/
-.blog_summary span{
+/*style for the span tag in blog_summary class through child selactor there the father is p*/
+.blog_summary p > span{
     color: yellow;
 }
 
