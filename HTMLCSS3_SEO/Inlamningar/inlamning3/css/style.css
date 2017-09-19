@@ -82,6 +82,14 @@ nav ul ul{
         left: 166px;
         top:-7px;
    }
+/*Style-hover-settings for last submenus submenu*/
+   nav ul li:last-child ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 159px;
+    left: -166px;
+    top:-7px;
+}
 
    /*start of css code to make the last li child in
 the submenu and submenus submenu  to 
@@ -139,6 +147,17 @@ nav ul li ul ul li:first-child a:after {
     border-bottom: 7px solid transparent;
     border-top: 7px solid transparent;
     border-right: 7px solid #4A575A;
+}
+/*give last submenus submenu a arrow to its right side*/
+nav ul li:last-child ul ul li:first-child a:after {
+    left: 159px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 0px solid #4A575A;
+    border-left: 7px solid #4A575A;
 }
 /*end of dropdown menu*/
 
