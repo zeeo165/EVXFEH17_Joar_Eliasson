@@ -1,0 +1,120 @@
+/*Universal Style*/
+* {
+    font-family: Merriweather; 
+    padding: 0; 
+    margin: 0 auto; 
+    box-sizing: border-box;    
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*style for body*/
+body{
+    width: 100%;
+    max-width: 800px;
+    background-color: #e9967a;
+}
+
+/*Start nav section*/
+
+/*style for nav*/
+nav{
+    background-color: #333;
+}
+
+/*style for the a:hover mode in nav*/
+nav a:hover{
+    color: #555;
+}
+
+/*style for the li tag in nav*/
+nav li{
+ 
+    margin-left: 4.5em;
+    padding: 8px;
+    display: inline-block;
+}
+
+/*style for the a tag in nav*/
+nav a{
+    color: whitesmoke;
+}
+/*End nav section*/
+
+/*h2 + h3 sibling selactor*/
+h2 + h3{
+    color: greenyellow;
+}
+
+/*Start class syndicate section*/
+
+/*style for the article tag in syndicate class*/
+.syndicate article{
+    background-color: slategray;
+    margin: 1em;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #8400FF;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+/*style for the p tag in syndicate class*/
+.syndicate p{
+    color: whitesmoke;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    
+}
+
+/*style for the h3 tag in syndicate class*/
+.syndicate h3{
+    padding: 0.5em;
+    text-align: center;
+}
+
+/*style for the footer tag in syndicate class*/
+.syndicate footer{
+    color: whitesmoke;
+}
+/*End class syndicate section*/
+
+/*Start class blog_summary section*/
+
+/*style for the li tag in blog_summary class*/
+.blog_summary li{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+/*style for the ul tag in blog_summary class*/
+.blog_summary ul{
+background-color:#E9897F;
+text-align: center;
+}
+
+/*style for the span tag in blog_summary class through child selactor there the father is p*/
+.blog_summary p > span{
+    color: yellow;
+}
+
+/*style for the a:hover mode in blog_summary class*/
+.blog_summary a:hover{
+    color: red;
+}
+/*End class blog_summary section*/
+
+/*style for every tag in contact class*/
+.contact{
+    text-align: center;
+    margin: 0.5em;
+}
+
+/*style for span tag in genral sibling selection in tel class*/
+.tel ~ span{
+    color: whitesmoke;
+}
+
+border-bottom-left-radius
+border-bottom-right-radius
+
