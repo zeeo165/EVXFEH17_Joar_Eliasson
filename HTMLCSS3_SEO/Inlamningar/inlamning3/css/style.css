@@ -16,29 +16,131 @@ body{
 }
 
 /*Start nav section*/
-
+/*start of dropdown menu*/
 /*style for nav*/
 nav{
-    background-color: #333;
+    height: 40px;
+    width: 804px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /*style for the a:hover mode in nav*/
 nav a:hover{
-    color: #555;
+    background-color: red;
+    color: black;
 }
 
-/*style for the li tag in nav*/
-nav li{
- 
-    margin-left: 4.5em;
-    padding: 8px;
-    display: inline-block;
-}
 
 /*style for the a tag in nav*/
 nav a{
-    color: whitesmoke;
+    color: white;
+    display: block;
 }
+
+/* style for the ul tag in nav*/
+nav ul{
+    opacity: 0.8;
+}
+
+/*style for li in the nav ul*/
+nav ul li{
+    background-color: #839CA5;
+     float: left;
+     width:159px;
+     height:40px;
+     line-height: 40px;
+   }
+
+/*Change the opacity after menu opacity so you can see
+the text in the submenu and submenus submenu*/
+nav ul ul{
+    opacity: 1;
+}
+/*Style-settings for submenu*/
+   nav ul ul li{
+       position: relative;
+       display: none;
+   }
+/*Style-settings for submenus submenu*/
+   nav ul ul ul{
+       display: none;
+       opacity: 1;
+   }
+/*Style-hover-settings for submenu*/
+   nav ul li:hover ul li {
+       display: block;
+   }
+/*Style-hover-settings for submenus submenu*/
+   nav ul ul li:hover ul{
+        display: block;
+        position: absolute;
+        width: 159px;
+        left: 166px;
+        top:-7px;
+   }
+
+   /*start of css code to make the last li child in
+the submenu and submenus submenu  to 
+get borders both in hovering and normaly automatic*/
+nav ul ul li:last-child{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child ul li:hover a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+nav ul ul li:last-child ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/*end of css code to make the last li child in 
+the submenu and submenus submenu 
+to get borders both in hovering and normaly automatic*/
+
+/*make a space between the menu and submenu*/
+   nav ul li ul::before{
+    content: " ";
+    display: block;
+    z-index: 1500;
+    left: 0;
+    top: -15px;
+    height: 7px;
+    width: 100%;
+    }
+/*give submenu arrow above it*/
+nav ul li ul li:first-child > a:after {
+    content: " ";
+    color:black;
+    position: absolute;
+    left: 70px;
+    top: -7px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #4A575A;
+}
+/*give submenus submenu a arrow to its left side*/
+nav ul li ul ul li:first-child a:after {
+    left: -7px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #4A575A;
+}
+/*end of dropdown menu*/
+
 /*End nav section*/
 
 /*h2 + h3 sibling selactor*/
@@ -55,9 +157,13 @@ h2 + h3{
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #8400FF;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
 }
+/*style to make every third article a diffrent color
+starting from the second article*/
+.syndicate article:nth-child(3n+2){
+    background-color: slateblue
+}
+
 
 /*style for the p tag in syndicate class*/
 .syndicate p{
@@ -115,6 +221,5 @@ text-align: center;
     color: whitesmoke;
 }
 
-border-bottom-left-radius
-border-bottom-right-radius
+
 
