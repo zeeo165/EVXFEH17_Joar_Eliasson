@@ -1,3 +1,4 @@
+/*Start of nav section-mobil and universal styles*/
 /*Universal Style*/
 * {
     font-family: Merriweather; 
@@ -15,153 +16,59 @@ body{
     background-color: #e9967a;
 }
 
-/*Start nav section*/
-/*start of dropdown menu*/
-/*style for nav*/
-nav{
-    height: 40px;
-    width: 804px;
-    margin: 0 auto;
+/*style for label only mobil*/
+label{
+    color: pink;
+    line-height: 40px;
+    font-size: 2em;
+    cursor: wait;
+}
+/*Style-settings for id nav-toggle*/
+#nav-toggle{
+    display: none;
+}
+/*Style-settings for #nav-toggle:checked + #wrapper nav*/
+#nav-toggle:checked + #wrapper nav{
     display: block;
-    text-align: center;
+}
+/*Style for nav for mobile size*/
+nav{
+    display: none;
     text-transform: uppercase;
 }
-
-/*style for the a:hover mode in nav*/
+/*Style for a in nav mobile size*/
+nav a{
+    display:block;
+	font-family: merriweather;
+	font-weight: bold;
+	font-size:10pt;
+    color: white;;
+}
+/*Style for a:hover mod in nav mobile size*/
 nav a:hover{
     background-color: red;
     color: black;
 }
-
-
-/*style for the a tag in nav*/
-nav a{
-    color: white;
-    display: block;
-}
-
-/* style for the ul tag in nav*/
+/*Style for ul in nav mobile size*/
 nav ul{
+    list-style: none;
     opacity: 0.8;
 }
-
-/*style for li in the nav ul*/
+/*Style for ul li in nav mobile size*/
 nav ul li{
     background-color: #839CA5;
-     float: left;
-     width:159px;
-     height:40px;
-     line-height: 40px;
-     margin-right: 1px;
+    line-height: 40px;
+    padding-left:50px;
    }
-
-/*Change the opacity after menu opacity so you can see
-the text in the submenu and submenus submenu*/
-nav ul ul{
-    opacity: 1;
+/*Style for ul li ul li a in nav mobile size*/
+nav ul li ul li a{
+    color:greenyellow;
 }
-/*Style-settings for submenu*/
-   nav ul ul li{
-       position: relative;
-       display: none;
-   }
-/*Style-settings for submenus submenu*/
-   nav ul ul ul{
-       display: none;
-       opacity: 1;
-   }
-/*Style-hover-settings for submenu*/
-   nav ul li:hover ul li {
-       display: block;
-   }
-/*Style-hover-settings for submenus submenu*/
-   nav ul ul li:hover ul{
-        display: block;
-        position: absolute;
-        width: 159px;
-        left: 166px;
-        top:-7px;
-   }
-/*Style-hover-settings for last submenus submenu*/
-   nav ul li:last-child ul li:hover ul{
-    display: block;
-    position: absolute;
-    width: 159px;
-    left: -166px;
-    top:-7px;
+/*style for ul ul li ul a mobile size*/
+nav ul ul li ul a{
+    color:green;
 }
-
-   /*start of css code to make the last li child in
-the submenu and submenus submenu  to 
-get borders both in hovering and normaly automatic*/
-nav ul ul li:last-child{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-nav ul ul li:last-child:hover a{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-nav ul ul li:last-child ul li:hover a{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-nav ul ul li:last-child ul li:last-child:hover a{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-/*end of css code to make the last li child in 
-the submenu and submenus submenu 
-to get borders both in hovering and normaly automatic*/
-
-/*make a space between the menu and submenu*/
-   nav ul li ul::before{
-    content: " ";
-    display: block;
-    z-index: 1500;
-    left: 0;
-    top: -15px;
-    height: 7px;
-    width: 100%;
-    }
-/*give submenu arrow above it*/
-nav ul li ul li:first-child > a:after {
-    content: " ";
-    color:black;
-    position: absolute;
-    left: 70px;
-    top: -7px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #4A575A;
-}
-/*give submenus submenu a arrow to its left side*/
-nav ul li ul ul li:first-child a:after {
-    left: -7px;
-    top: 50%;
-    margin-top: -10px;
-    border-left: 0;
-    border-bottom: 7px solid transparent;
-    border-top: 7px solid transparent;
-    border-right: 7px solid #4A575A;
-}
-/*give last submenus submenu a arrow to its right side*/
-nav ul li:last-child ul ul li:first-child a:after {
-    left: 159px;
-    top: 50%;
-    margin-top: -10px;
-    border-left: 0;
-    border-bottom: 7px solid transparent;
-    border-top: 7px solid transparent;
-    border-right: 0px solid #4A575A;
-    border-left: 7px solid #4A575A;
-}
-/*end of dropdown menu*/
-
-/*End nav section*/
+/*End of nav section-mobil and universal styles*/
 
 /*h2 + h3 sibling selactor*/
 h2 + h3{
@@ -240,6 +147,166 @@ text-align: center;
 .tel ~ span{
     color: whitesmoke;
 }
+/*converter styles from mobil styles to desktop styles*/
+@media all and (min-width: 630px){
+    label{
+        display: none;
+    }
+/*Start nav section-Desktop*/
+/*start of dropdown-menu-Desktop*/
+/*style for nav for desktop*/
+nav{
+    color:white;
+    height: 40px;
+    width: 804px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*style for the a:hover mode in nav for desktop */
+nav a:hover{
+    background-color: red;
+    color: black;
+}
 
 
+/*style for the a tag in nav for desktop*/
+nav a{
+    color: white;
+    display: block;
+}
 
+/* style for the ul tag in nav for desktop*/
+nav ul{
+    opacity: 0.8;
+}
+
+/*style for li in the nav ul for desktop*/
+nav ul li{
+    background-color: #839CA5;
+     float: left;
+     width:159px;
+     height:40px;
+     line-height: 40px;
+     margin-right: 1px;
+     padding-left:0px;
+   }
+
+/*Change the opacity after menu opacity so you can see
+the text in the submenu and submenus submenu*/
+nav ul ul{
+    opacity: 1;
+}
+/*Style-settings for submenu*/
+   nav ul ul li{
+       position: relative;
+       display: none;
+   }
+/*Style-settings for submenus submenu*/
+   nav ul ul ul{
+       display: none;
+       opacity: 1;
+   }
+/*change styles from nav ul li ul li a from mobile to desktop styles*/
+   nav ul li ul li a{
+    color:white;
+}
+/*change styles from nav ul ul ul li a from mobile to desktop styles*/
+nav ul ul li ul a{
+    color:white;
+}
+
+/*Style-hover-settings for submenu*/
+   nav ul li:hover ul li {
+       display: block;
+   }
+/*Style-hover-settings for submenus submenu*/
+   nav ul ul li:hover ul{
+        display: block;
+        position: absolute;
+        width: 159px;
+        left: 166px;
+        top:-7px;
+   }
+/*Style-hover-settings for last submenus submenu*/
+   nav ul li:last-child ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 159px;
+    left: -166px;
+    top:-7px;
+}
+
+   /*start of css code to make the last li child in
+the submenu and submenus submenu  to 
+get borders both in hovering and normaly automatic*/
+nav ul ul li:last-child{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child ul li:hover a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+nav ul ul li:last-child ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/*end of css code to make the last li child in 
+the submenu and submenus submenu 
+to get borders both in hovering and normaly automatic*/
+
+/*make a space between the menu and submenu*/
+   nav ul li ul::before{
+    content: " ";
+    display: block;
+    z-index: 1500;
+    left: 0;
+    top: -15px;
+    height: 7px;
+    width: 100%;
+    }
+/*give submenu arrow above it*/
+nav ul li ul li:first-child > a::after {
+    content: " ";
+    position: absolute;
+    left: 70px;
+    top: -7px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #4A575A;
+}
+/*give submenus submenu a arrow to its left side*/
+nav ul li ul ul li:first-child a::after {
+    left: -7px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #4A575A;
+}
+/*give last submenus submenu a arrow to its right side*/
+nav ul li:last-child ul ul li:first-child a::after {
+    left: 159px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 0px solid #4A575A;
+    border-left: 7px solid #4A575A;
+}
+/*end of dropdown-menu-Desktop*/
+
+/*End nav section-Desktop*/
+}
