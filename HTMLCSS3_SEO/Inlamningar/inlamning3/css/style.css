@@ -21,7 +21,7 @@ label{
     color: pink;
     line-height: 40px;
     font-size: 2em;
-    cursor: wait;
+    cursor: crosshair;
 }
 /*Style-settings for id nav-toggle*/
 #nav-toggle{
