@@ -1,0 +1,450 @@
+/*Start of nav section-mobil and universal styles*/
+/*Universal Style*/
+* {
+    font-family: Merriweather; 
+    box-sizing: border-box;  
+    padding: 0;
+    margin: 0;  
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*style for body*/
+body{
+    padding: 0;
+    margin: 0 auto;
+    background-color: #e9967a;
+    justify-content: center;
+}
+
+.fa-bed, 
+.fa-microchip, 
+.fa-imdb{
+font-size: 1.5em;
+}
+
+    /*style for label only mobil*/
+    label{
+        color: pink;
+        line-height: 40px;
+        font-size: 2em;
+        cursor: crosshair;
+    }
+/*Style-settings for id nav-toggle*/
+#nav-toggle{
+     display: none;
+}
+/*start of Style-settings for checkboxes*/
+.Hidden-on-mobile{
+    display: none;
+}
+#nav-toggle-submenu1{
+    display: none;
+}
+#nav-toggle-submenu2{
+    display: none;
+}
+#nav-toggle-submenu3{
+    display: none;
+}
+#nav-toggle-submenu4{
+    display: none;
+}
+#nav-toggle-submenu5{
+    display: none;
+}
+/*End of Style-settings for checkboxes*/
+
+/*Style-settings for when you click, click me label (#nav-toggle:checked + #wrapper nav)*/
+#nav-toggle:checked + #wrapper nav{
+    display: block;
+}
+/*Style-settings for when you click, Meny1 label (#nav-toggle-submenu1:checked + #wrapper ul)*/
+#nav-toggle-submenu1:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny2 label (#nav-toggle-submenu2:checked + #wrapper ul)*/
+#nav-toggle-submenu2:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny3 label (#nav-toggle-submenu3:checked + #wrapper ul*/
+#nav-toggle-submenu3:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny4 label (#nav-toggle-submenu4s:checked + #wrapper ul)*/
+#nav-toggle-submenu4:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny5 label (#nav-toggle-submenu5:checked + #wrapper ul)*/
+#nav-toggle-submenu5:checked + #wrapper ul{
+    display: block;
+}
+/*style for class submenu*/
+    .submenu{
+        display:block;
+        font-family: merriweather;
+        font-weight: bold;
+        font-size:12pt;
+        color: white;
+    }
+    /*style for class submenu hover mode*/
+    .submenu:hover{
+        background-color: red;
+        color: black;
+    }
+    /*Style for nav for mobile size*/
+    nav{
+        display: none;
+        text-transform: uppercase;
+    }
+    /*style for nav ul ul for mobile */
+    nav ul ul{
+        display: none;
+    }
+    /*Style for a in nav mobile size*/
+    nav a{
+        
+        font-family: merriweather;
+        font-weight: bold;
+        font-size:10pt;
+        color: white;
+    }
+    /*Style for a:hover mod in nav mobile size*/
+    nav a:hover{
+        background-color: red;
+        color: black;
+    }
+    /*Style for ul in nav mobile size*/
+    nav ul{
+        list-style: none;
+        opacity: 0.8;
+    }
+    
+    /*Style for ul li in nav mobile size*/
+    nav ul li{
+        background-color: #839CA5;
+        line-height: 40px;
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    /*Style for ul li ul li a in nav mobile size*/
+    nav ul li ul li a{
+        color:greenyellow;
+    }
+    /*style for ul ul li ul a mobile size*/
+    nav ul ul li ul a{
+        color:green;
+    }
+    /*End of nav section-mobil and universal styles*/
+
+/*Start class syndicate section*/
+
+/*style for syndicate class*/
+.syndicate{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*style for class rubrik*/
+.rubrik{
+    display: flex;
+    justify-content: space-between;
+}
+/*Style for class card*/
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    background: #2a547b;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/*style for class card first child settings*/
+.card:first-child{
+    background-color: green;
+}
+/*style for class card last child settings*/
+.card:last-child{
+    background-color: orange;
+}
+/*style for class card1 for mobile*/
+.card1{
+    display: flex;
+}
+/*style for class card2 for mobile*/
+.card2{
+    display: flex;
+}
+/*style for class card3 for mobile*/
+.card3{
+    display: flex;
+}
+/*style for class image*/
+.image{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 1em;
+    display: block;
+}
+/*style for the p tag in div tag in syndicate class*/
+.syndicate div p{
+    color: whitesmoke;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+/*style for class title*/
+.title{
+    color: #FA0000;
+    font-family: Merriweather;
+    font-size: 120%;
+    font-weight: 700;
+
+}
+/*style for class rubrik*/
+.rubrik{
+    font-size: 100%
+}
+/*style for the footer tag in syndicate class*/
+.syndicate footer{
+    color: whitesmoke;
+}
+/*style for class footer-button*/
+.footer-button{
+    display:flex;
+    height: 40px;
+    background-color: grey;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+/*style for class footer-button hover mod*/
+.footer-button:hover{
+    color:black;
+    background-color: red;
+    border-color: darkred;
+}
+/*style for i tag in footer-icons*/
+.footer-icons i{
+    margin-top:7px;
+    margin-right: 0.5em;
+    margin-left: 0.5em; 
+}
+/*End class syndicate section*/
+
+
+/*style for every tag in contact class*/
+.contact{
+    text-align: center;
+    margin: 0.5em;
+}
+
+/*style for span tag in genral sibling selection in tel class*/
+.tel ~ span{
+    color: whitesmoke;
+}
+/*converter styles from mobil styles to desktop styles*/
+@media all and (min-width: 816px){
+    label{
+        display: none;
+    }
+
+/*Start class syndicate section-Desktop*/
+
+/*style for class card1 for Desktop*/
+.card1{
+    display: flex;
+    flex: 1;
+       margin-right: 2.5px;
+}
+/*style for class card2 for Desktop*/
+.card2{
+    display: flex;
+    flex: 1;
+    margin-left: 2.5px;
+}
+/*style for class card3 for Desktop*/
+.card3{
+    display: flex;
+    flex-grow:2;
+}
+/*End class syndicate section for Desktop*/
+
+/*Start nav section-Desktop*/
+/*start of Style-settings for mobile-checkbox when in desktop*/
+.Hidde-on-desktop{
+    display: none;
+}
+.Hidden-on-mobile{
+    display: flex;
+}
+/*End of Style-settings for mobile-checkbox when in desktop*/
+/*Style for class submenu for Desktop*/
+.submenu{
+    display: flex;
+    justify-content: center;
+}
+/*Style for a tag in class submenu for Desktop*/
+.submenu a{
+    width: 158px;
+    height: 40px;
+}
+/*start of dropdown-menu-Desktop*/
+/*style for nav for Desktop*/
+nav{
+    display: block;  
+   
+}
+
+/*style for the a:hover mode in nav for Desktop */
+nav a:hover{
+    background-color: red;
+    color: black;
+}
+
+
+/* style for the ul tag in nav for Desktop*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    background-color:transparent;
+    display: flex;
+    opacity: 0.8;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+/*style for li in the nav ul for Desktop*/
+nav ul li{
+    background-color: #839CA5;
+     width: 158px;
+     height:40px;
+     line-height: 40px;
+     padding-left:0px;
+     padding-right: 0px;
+   }
+
+/*style for the a tag in nav for Desktop*/
+nav a{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/*Change the opacity after menu opacity so you can see
+the text in the submenu and submenus submenu*/
+nav ul ul{
+    display: block;
+    opacity: 1;
+}
+/*Style-settings for submenu for Desktop*/
+   nav ul ul li{
+       position: relative;
+       display: none;
+       width: 158px;
+       height:40px;
+       line-height: 40px;
+   }
+/*Style-settings for submenus submenu for Desktop*/
+   nav ul ul ul{
+       display: none;
+       opacity: 1;
+   }
+/*change styles from nav ul li ul li a from mobile to desktop styles*/
+   nav ul li ul li a{
+    color:white;
+}
+/*change styles from nav ul ul ul li a from mobile to desktop styles*/
+nav ul ul li ul a{
+    color:white;
+}
+
+/*Style-hover-settings for submenu for Desktop*/
+   nav ul li:hover ul li {
+       display: block;
+   }
+/*Style-hover-settings for submenus submenu for Desktop*/
+   nav ul ul li:hover ul{
+        display: block;
+        position: absolute;
+        width: 158px;
+        left: 164px;
+        top:-7px;
+   }
+/*Style-hover-settings for last submenus submenu for Desktop*/
+   nav ul li:last-child ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 158px;
+    left: -164px;
+    top:-7px;
+}
+ /*start of css code to make the last li child in
+the submenu and submenus submenu  to 
+get borders both in hovering and normaly automatic*/
+nav ul ul li:last-child{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav ul ul li:last-child ul li:hover a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+nav ul ul li:last-child ul li:last-child:hover a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/*end of css code to make the last li child in 
+the submenu and submenus submenu 
+to get borders both in hovering and normaly automatic*/
+
+/*make a space between the menu and submenu*/
+   nav ul li ul::before{
+    content: " ";
+    display: block;
+    z-index: 1500;
+    left: 0;
+    top: -15px;
+    height: 7px;
+    width: 100%;
+    }
+/*give submenu arrow above it*/
+nav ul li ul li:first-child > a::after {
+    content: " ";
+    position: absolute;
+    left: 70px;
+    top: -7px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #4A575A;
+}
+/*give submenus submenu a arrow to its left side*/
+nav ul li ul ul li:first-child a::after {
+    left: -7px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #4A575A;
+}
+/*give last submenus submenu a arrow to its right side*/
+nav ul li:last-child ul ul li:first-child a::after {
+    left: 158px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 0px solid #4A575A;
+    border-left: 7px solid #4A575A;
+}
+/*end of dropdown-menu-Desktop*/
+}
+/*End nav section-Desktop*/
