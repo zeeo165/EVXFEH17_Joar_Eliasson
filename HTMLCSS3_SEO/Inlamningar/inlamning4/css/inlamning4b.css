@@ -1,0 +1,432 @@
+/*Start of nav section-mobil and universal styles*/
+/*Universal Style*/
+* {
+    font-family: Merriweather; 
+    box-sizing: border-box;  
+    padding: 0;
+    margin: 0;  
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*style for body*/
+body{
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
+    justify-content: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/*style p tag*/
+p{
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+/*style for class fa-bed, fa-microchip, fa-imdb*/
+.fa-bed, 
+.fa-microchip, 
+.fa-imdb{
+font-size: 1.5em;
+}
+
+    /*style for label only mobil*/
+    label{
+        color: pink;
+        line-height: 40px;
+        font-size: 2em;
+        cursor: crosshair;
+    }
+/*Style-settings for id nav-toggle*/
+#nav-toggle{
+     display: none;
+}
+/*start of Style-settings for checkboxes*/
+.Hidden-on-mobile{
+    display: none;
+}
+#nav-toggle-submenu1{
+    display: none;
+}
+#nav-toggle-submenu2{
+    display: none;
+}
+#nav-toggle-submenu3{
+    display: none;
+}
+#nav-toggle-submenu4{
+    display: none;
+}
+#nav-toggle-submenu5{
+    display: none;
+}
+/*End of Style-settings for checkboxes*/
+
+/*Style-settings for when you click, click me label (#nav-toggle:checked + #wrapper nav)*/
+#nav-toggle:checked + #wrapper nav{
+    display: block;
+}
+/*Style-settings for when you click, Meny1 label (#nav-toggle-submenu1:checked + #wrapper ul)*/
+#nav-toggle-submenu1:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny2 label (#nav-toggle-submenu2:checked + #wrapper ul)*/
+#nav-toggle-submenu2:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny3 label (#nav-toggle-submenu3:checked + #wrapper ul*/
+#nav-toggle-submenu3:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny4 label (#nav-toggle-submenu4s:checked + #wrapper ul)*/
+#nav-toggle-submenu4:checked + #wrapper ul{
+    display: block;
+}
+/*Style-settings for when you click, Meny5 label (#nav-toggle-submenu5:checked + #wrapper ul)*/
+#nav-toggle-submenu5:checked + #wrapper ul{
+    display: block;
+}
+/*style-settings for id main-header-logo*/
+#main-header-logo{
+display: flex;
+align-items: baseline;
+justify-content: flex-end;
+}
+/*style-settings for class main-header-ikoner */
+.main-header-ikoner{
+	padding-right:1em;
+	font-size:2.5em;
+}
+/*Start of style for icons*/
+.icon-red{color: red;}
+.icon-blue{color: blue;}
+.icon-lightblue{color: lightblue;}
+/*End of style for icons*/
+/*style for class submenu*/
+.submenu{
+        display:block;
+        font-family: merriweather;
+        font-weight: bold;
+        font-size:12pt;
+        color: white;
+    }
+    /*style for class submenu hover mode*/
+    .submenu:hover{
+        color: black;
+    }
+    .submenu i{
+        line-height: 40px;
+    }
+    /*Style for nav for mobile size*/
+    nav{
+        text-transform: uppercase;
+    }
+    /*style for nav ul ul for mobile */
+    nav ul ul{
+        display: none;
+    }
+    /*Style for a in nav mobile size*/
+    nav a{
+        
+        font-family: merriweather;
+        color: white;
+    }
+    /*Style for a:hover mod in nav mobile size*/
+    nav a:hover{
+        color: black;
+    }
+    /*Style for ul in nav mobile size*/
+    nav ul{
+        list-style: none;
+        opacity: 0.8;
+    }
+    
+    /*Style for ul li in nav mobile size*/
+    nav ul li{
+        display: flex;
+       justify-content: center;
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    /*Style for ul li ul li a in nav mobile size*/
+    nav ul li ul li a{
+        color:whitesmoke;
+    }
+    /*style for ul ul li ul a mobile size*/
+    nav ul ul li ul a{
+        color:whitesmoke;
+    }
+/*start of style for mainmenus colors*/
+    .menu-green{background-color: green;}
+    .menu-blue{background-color: blue;}
+    .menu-purple{background-color:purple; }
+    .menu-darkblue{background-color: darkblue;}
+    .menu-gold{background-color: gold;}
+    .menu-orange{background-color: orange;}
+/*end of style for mainmenus colors*/
+/*style for class sök*/
+    .sök{
+        padding:0.5em;
+    }
+/*End of nav section-mobil and universal styles*/
+
+
+
+
+
+
+
+/*Start class syndicate section*/
+    /*style for class syndicate*/
+    .syndicate{
+        display: flex;
+        flex-direction: column;
+    }
+/*style for class box*/
+.box {
+    display:flex;
+   flex: 1;
+   flex-wrap: wrap;
+  }
+  /*style for class box1*/
+  .box1 {
+    background-color: gray;
+    padding: 0.5em;
+    color: whitesmoke;
+  }  
+  /*style for class box2*/
+  .box2 {
+    flex: 3;
+    order:-1;	  
+  }
+  /*style for class box2-footer*/
+  .Box2-footer{
+    border-top-width: 2px;
+    border-top-style: groove;
+    border-top-color: lightgray;
+    padding-top: 1em;
+  }
+  /*style for class main-rubrik*/
+.main-rubrik{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+/*style for the p tag in div tag in class box*/
+.Box div p{
+    display: block;
+}
+/*style for class rubrik*/
+.rubrik{
+    display: flex;
+    justify-content: space-between;
+}
+/*Style for class card*/
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    color: whitesmoke;
+    background: #2a547b;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/*style for class card first child settings*/
+.card:first-child{
+    background-color: green;
+}
+/*style for class card last child settings*/
+.card:last-child{
+    background-color: orange;
+}
+/*style for class card1 for mobile*/
+.card1{
+    display: flex;
+}
+/*style for class card2 for mobile*/
+.card2{
+    display: flex;
+}
+/*style for class card3 for mobile*/
+.card3{
+    display: flex;
+}
+/*style for class image*/
+.image{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 1em;
+    display: block;
+}
+/*style for class title*/
+.title{
+    font-family: Merriweather;
+    font-size: 120%;
+    font-weight: 700;
+
+}
+/*style for class rubrik*/
+.rubrik{
+    font-size: 1em;
+}
+/*style for class footer-button*/
+.footer-button{
+    display:flex;
+    height: 40px;
+    background-color: grey;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+/*style for class footer-button hover mod*/
+.footer-button:hover{
+    color:black;
+    background-color: red;
+    border-color: darkred;
+}
+/*style for i tag in footer-icons*/
+.footer-icons i{
+    margin-top:7px;
+    margin-right: 0.5em;
+    margin-left: 0.5em; 
+}
+/*End class syndicate section*/
+
+/*style for every tag in contact class*/
+.contact{
+    text-align: center;
+    margin: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+/*converter styles from mobil styles to desktop styles*/
+@media all and (min-width: 816px){
+    label{
+        display: none;
+    }
+
+/*Start class syndicate section-Desktop*/
+.syndicate{
+    display: flex;
+    flex-direction: row;
+}
+/*style for class box for desktop*/
+.box{
+    border-top-width: 2px;
+    border-top-color: lightgray;
+    border-top-style: groove;
+    padding: 0.5em;
+}
+/*style for class card-wrapper for desktop (dena klass är för att fixa så card:first-child och card:last-child ska ge
+åt sina färger till korten)*/
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  /*style for class box1 for desktop*/
+  .box1{
+      display: block;
+    order:-1;
+  }
+
+/*style for class card1 for Desktop*/
+.card1{
+    display: flex;
+    flex: 1;
+       margin-right: 2.5px;
+}
+/*style for class card2 for Desktop*/
+.card2{
+    display: flex;
+    flex: 1;
+    margin-left: 2.5px;
+}
+/*style for class card3 for Desktop*/
+.card3{
+    display: flex;
+    flex-grow:2;
+}
+/*End class syndicate section for Desktop*/
+
+/*Start nav section-Desktop*/
+/*start of Style-settings for mobile-checkbox when in desktop*/
+.Hidde-on-desktop{
+    display: none;
+}
+.Hidden-on-mobile{
+    display: flex;
+}
+/*End of Style-settings for mobile-checkbox when in desktop*/
+/*Style for class submenu for Desktop*/
+.submenu{
+    display: flex;
+    justify-content: center;
+}
+/*Style for a tag in class submenu for Desktop*/
+.submenu a{
+    padding-left: 0.4em;
+}
+.submenu i{
+    padding-right:0.4em;
+}
+/*start of dropdown-menu-Desktop*/
+/*style for nav for Desktop*/
+nav{
+    display: block;  
+   
+}
+
+/*style for the a:hover mode in nav for Desktop */
+nav a:hover{
+    background-color: red;
+    color: black;
+}
+
+
+/* style for the ul tag in nav for Desktop*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+    display: flex;
+    opacity: 0.8;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+/*style for li in the nav ul for Desktop*/
+nav ul li{
+    background-color: #839CA5;
+     padding-left:0px;
+     padding-right: 0px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     justify-content: center;
+   }
+/*style for class sök to reset the padding for desktop*/
+.sök{
+    padding: 0em;
+}
+/*style for class sök for desktop*/
+.sök{
+line-height: 40px;
+    order: 1;
+    padding-right:0.4em;
+    padding-left: 0.4em; 
+}
+/*Style-settings for submenu for Desktop*/
+   nav ul ul li{
+       display: none;
+   }
+}
