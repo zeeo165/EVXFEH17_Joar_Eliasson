@@ -272,7 +272,7 @@ nav ul{
     background-color:transparent;
     display: flex;
     flex-flow: row wrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 /*style for li in the nav ul for Desktop*/
 nav ul li{
@@ -496,6 +496,11 @@ img{
 }
     
         @media screen and (min-width: 64em) {
+
+            img{
+                width: 100%;
+                height: auto;
+            }
             /*Style-settings for class imgs. desktop-version-with-grid*/
             .imgs {
                 display: grid;
