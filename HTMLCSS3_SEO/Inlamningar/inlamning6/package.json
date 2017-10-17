@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeeo165/SASS.git"
+    "url": "git+https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zeeo165/SASS/issues"
+    "url": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6/issues"
   },
-  "homepage": "https://github.com/zeeo165/SASS#readme",
+  "homepage": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
