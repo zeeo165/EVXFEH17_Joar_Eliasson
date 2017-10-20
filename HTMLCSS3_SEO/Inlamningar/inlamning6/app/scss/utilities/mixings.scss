@@ -1,0 +1,16 @@
+/*mixing display_none with display as none*/
+@mixin display_none(){
+    display: none;
+}
+/*mixing display_flex with display as flex*/
+@mixin display_flex(){
+    display: flex;
+}
+/*mixing display_block with display as block*/
+@mixin display_block(){
+    display: block;
+}
+/*mixing text_align-center with text-align center*/
+@mixin text_align-center{
+    text-align: $text_center;
+}

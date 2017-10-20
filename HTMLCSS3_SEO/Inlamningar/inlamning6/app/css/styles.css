@@ -1,3 +1,548 @@
-.testing {
-  width: 71.42857%;
-  background: purple; }
+@charset "UTF-8";
+/*variable black with the color black*/
+/*mixing display_none with display as none*/
+/*mixing display_flex with display as flex*/
+/*mixing display_block with display as block*/
+/*mixing text_align-center with text-align center*/
+/*sass map för breakpoints*/
+/*variabler text_center with center*/
+/*Universal Style*/
+* {
+  font-family: Merriweather;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none; }
+
+/*style for body*/
+body {
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  background-color: white;
+  justify-content: center; }
+
+/*Style-settings for img tag*/
+img {
+  width: 100%;
+  height: auto; }
+
+/*Style-settings for class imgs*/
+.imgs {
+  max-width: 25em;
+  margin: 1em auto;
+  padding: 0;
+  list-style-type: none; }
+
+/*Style-settings for class img*/
+.img {
+  padding-top: 1em;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: gray; }
+
+/*Style-settings for h3 tag in class img*/
+.img h3 {
+  color: black;
+  text-align: center;
+  padding-bottom: 0.5em; }
+
+@media screen and (min-width: 45em) {
+  /*Style-settings for class img-1. Tablet-version-no-grid*/
+  .img-1 {
+    height: 0;
+    width: 100%;
+    margin-left: -11em;
+    margin-bottom: 0; }
+  /*Style-settings for class img-2. Tablet-version-no-grid*/
+  .img-2 {
+    margin-top: -1em;
+    height: 0;
+    width: 100%;
+    margin-left: 11em;
+    margin-bottom: 0; }
+  /*Style-settings for class img-3. Tablet-version-no-grid*/
+  .img-3 {
+    margin-top: 19em;
+    height: 0;
+    width: 100%;
+    margin-left: -11em; }
+  /*Style-settings for class img-4. Tablet-version-no-grid*/
+  .img-4 {
+    margin-top: -1em;
+    height: 0;
+    width: 100%;
+    margin-left: 11em; }
+  /*Style-settings for class img-5. Tablet-version-no-grid*/
+  .img-5 {
+    margin-top: 19em;
+    height: 0;
+    width: 100%;
+    margin-left: -11em;
+    margin-bottom: 0; }
+  /*Style-settings for class img-6. Tablet-version-no-grid*/
+  .img-6 {
+    margin-top: -1em;
+    height: 0;
+    width: 100%;
+    margin-left: 11em; }
+  /*Style-settings for class img-7. Tablet-version-no-grid*/
+  .img-7 {
+    margin-top: 19em;
+    height: 0;
+    width: 100%;
+    margin-left: -11em; } }
+
+@media screen and (min-width: 64em) {
+  /*Style-settings for class img-1. desktop-version-no-grid*/
+  .img-1 {
+    height: 0;
+    width: 100%;
+    margin-left: -21em; }
+  /*Style-settings for class img-2. desktop-version-no-grid*/
+  .img-2 {
+    height: 0;
+    width: 100%;
+    margin-left: 21em;
+    margin-top: -1em;
+    margin-bottom: 0; }
+  /*Style-settings for class img-3. desktop-version-no-grid*/
+  .img-3 {
+    margin-top: -1em;
+    height: 0;
+    width: 100%;
+    margin-left: 0; }
+  /*Style-settings for class img-4. desktop-version-no-grid*/
+  .img-4 {
+    margin-top: 19em;
+    height: 0;
+    width: 100%;
+    margin-left: -21em; }
+  /*Style-settings for class img-5. desktop-version-no-grid*/
+  .img-5 {
+    height: 0;
+    width: 100%;
+    margin-left: 21em;
+    margin-top: -1em;
+    margin-bottom: 0; }
+  /*Style-settings for class img-6. desktop-version-no-grid*/
+  .img-6 {
+    margin-top: -1em;
+    height: 0;
+    width: 100%;
+    margin-left: 0; }
+  /*Style-settings for class img-7. desktop-version-no-grid*/
+  .img-7 {
+    margin-top: 19em;
+    height: 0;
+    width: 100%;
+    margin-left: 0; } }
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+  /*Style-settings for img tag. version-for-grid*/
+  img {
+    width: 100%;
+    height: auto; }
+  /*Style-settings for class imgs. version-for-grid*/
+  .imgs {
+    max-width: 100em;
+    margin: 1em auto;
+    padding: 0;
+    list-style-type: none;
+    /*Style-settings for class imgs. Tablet-version-with-grid*/
+    /*Style-settings for class imgs. desktop-version-with-grid*/ }
+    @media (min-width: 45em) {
+      .imgs {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "img1 img1" "img2 img3" "img4 img5" "img6 img7"; } }
+    @media (min-width: 64em) {
+      .imgs {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-areas: "img1 img2 img2 img4 img4" "img3 img2 img2 img6 img6" "img5 img5 img7 img6 img6"; } }
+  /*Style-settings for class img. version-for-grid*/
+  .img {
+    padding-top: 1em;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: gray;
+    /*Style-settings for class img. Tablet-version-with-grid*/
+    /*Style-settings for class img. desktop-version-with-grid*/ }
+    @media (min-width: 45em) {
+      .img {
+        display: grid; } }
+    @media (min-width: 64em) {
+      .img {
+        display: grid;
+        margin-top: 1em;
+        padding: em; } }
+  /*Style-settings for h3 tag in class img. version-for-grid*/
+  .img h3 {
+    color: black;
+    text-align: center;
+    padding-bottom: 0.5em; }
+  /*Style-settings for class img-1-grid*/
+  .img-1-grid {
+    grid-area: img1;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-2-grid*/
+  .img-2-grid {
+    grid-area: img2;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-3-grid*/
+  .img-3-grid {
+    grid-area: img3;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-4-grid*/
+  .img-4-grid {
+    grid-area: img4;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-5-grid*/
+  .img-5-grid {
+    grid-area: img5;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-6-grid*/
+  .img-6-grid {
+    grid-area: img6;
+    margin: 0;
+    height: auto;
+    width: 100%; }
+  /*Style-settings for class img-7-grid*/
+  .img-7-grid {
+    grid-area: img7;
+    margin: 0;
+    height: auto;
+    width: 100%; } }
+
+/*Style-settings for class main-header. mobil-and-tablet*/
+.main-header {
+  text-align: center; }
+
+/*Style-settings for class megamenu in class main-header. mobil-and-tablet*/
+.main-header .megamenu {
+  text-align: start; }
+
+/*Style-settings for id nav-toggle*/
+#nav-toggle {
+  display: none; }
+
+/*start of Style-settings for checkboxes*/
+.Hidden-on-mobile {
+  display: none;
+  /*Style-settings for mobile-checkbox when in desktop*/ }
+  @media (min-width: 64em) {
+    .Hidden-on-mobile {
+      display: flex; } }
+
+#nav-toggle-submenu1 {
+  display: none; }
+
+#nav-toggle-submenu2 {
+  display: none; }
+
+#nav-toggle-submenu3 {
+  display: none; }
+
+#nav-toggle-submenu4 {
+  display: none; }
+
+#nav-toggle-submenu5 {
+  display: none; }
+
+/*End of Style-settings for checkboxes*/
+/*Style-settings for when you click, click me label (#nav-toggle:checked + #wrapper nav)*/
+#nav-toggle:checked + #wrapper nav {
+  display: block; }
+
+/*Style-settings for when you click, Meny1 label (#nav-toggle-submenu1:checked + #wrapper ul)*/
+#nav-toggle-submenu1:checked + #wrapper ul {
+  display: block; }
+
+/*Style-settings for when you click, Meny2 label (#nav-toggle-submenu2:checked + #wrapper ul)*/
+#nav-toggle-submenu2:checked + #wrapper ul {
+  display: block; }
+
+/*Style-settings for when you click, Meny3 label (#nav-toggle-submenu3:checked + #wrapper ul*/
+#nav-toggle-submenu3:checked + #wrapper ul {
+  display: block; }
+
+/*Style-settings for when you click, Meny4 label (#nav-toggle-submenu4s:checked + #wrapper ul)*/
+#nav-toggle-submenu4:checked + #wrapper ul {
+  display: block; }
+
+/*Style-settings for when you click, Meny5 label (#nav-toggle-submenu5:checked + #wrapper ul)*/
+#nav-toggle-submenu5:checked + #wrapper ul {
+  display: block; }
+
+/*style for class submenu*/
+.submenu {
+  display: block;
+  font-family: merriweather;
+  font-weight: bold;
+  font-size: 12pt;
+  color: whitesmoke;
+  /*Style for class submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    .submenu {
+      display: flex;
+      justify-content: center;
+      color: black; } }
+
+/*style for class submenu hover mode*/
+.submenu:hover {
+  color: rgba(255, 255, 255, 0.726); }
+
+/*Style for a tag in class submenu*/
+.submenu a {
+  /*Style for a tag in class submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    .submenu a {
+      width: 100px;
+      height: 40px;
+      color: black; } }
+
+/*Style-settings for nav tag*/
+nav {
+  display: none;
+  text-transform: uppercase;
+  /*style for nav for Desktop*/ }
+  @media (min-width: 64em) {
+    nav {
+      display: block;
+      margin-top: -1.5em; } }
+
+/*style for nav ul ul for mobile */
+nav ul ul {
+  display: none; }
+  @media (min-width: 64em) {
+    nav ul ul {
+      display: flex; } }
+
+/*extendchen with the color whitesomke*/
+nav a {
+  color: whitesmoke; }
+
+/*Style for a in nav mobile size*/
+nav a {
+  font-family: merriweather;
+  font-weight: bold;
+  font-size: 10pt;
+  /*style for the a tag in nav for Desktop*/ }
+  @media (min-width: 64em) {
+    nav a {
+      color: white;
+      display: flex;
+      justify-content: center; } }
+
+/*style for the a tag in class megamenu*/
+nav ul li .megamenu li a {
+  padding-left: 2.5em;
+  /*style for the a tag in class megamenu for desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li .megamenu li a {
+      padding-left: 0;
+      font-family: none;
+      font-weight: bold;
+      font-size: 11pt;
+      color: whitesmoke;
+      display: flex;
+      justify-content: flex-start; } }
+
+/*style for the h4 tag in class megamenu*/
+@media (min-width: 64em) {
+  nav ul li .megamenu h4 {
+    color: whitesmoke; } }
+
+/*Style for a:hover mod in nav mobile size*/
+nav a:hover {
+  color: rgba(255, 255, 255, 0.726);
+  /*style for the a:hover mode in nav for Desktop */ }
+  @media (min-width: 64em) {
+    nav a:hover {
+      color: black; } }
+
+/*Style for ul in nav mobile size*/
+nav ul {
+  list-style: none;
+  /* style for the ul tag in nav for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5%;
+      background-color: transparent;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end; } }
+
+/*style for class megamenu*/
+nav ul li .megamenu {
+  /*style for class megamenu for desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li .megamenu {
+      position: absolute;
+      margin-bottom: 0;
+      display: none;
+      justify-content: center;
+      flex-flow: row wrap;
+      max-width: 1200px;
+      left: 30em;
+      padding: 40px 40px 0 40px;
+      background: #000000;
+      text-align: left;
+      border-top: 5px solid #5e5e5e;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      z-index: 1; } }
+
+/*style for class megamenu when hovering*/
+nav ul li:hover ul.megamenu {
+  /*style for class megamenu when hovering for desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li:hover ul.megamenu {
+      display: flex; } }
+
+/*Style for ul li in nav mobile size*/
+nav ul li {
+  background-color: #494949;
+  line-height: 40px;
+  /*style for li in the nav ul for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li {
+      color: black;
+      background-color: white;
+      width: 130px;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 0px;
+      padding-right: 0px; } }
+
+/*Style for ul li ul li a in nav mobile size*/
+nav ul li ul li a {
+  color: black;
+  font-size: 16px;
+  /*change styles from nav ul li ul li a from mobile to desktop styles*/ }
+  @media (min-width: 64em) {
+    nav ul li ul li a {
+      color: black; } }
+
+/*style for ul ul li ul a mobile size*/
+nav ul ul li ul a {
+  color: #8d8d8d;
+  font-size: 13px;
+  /*change styles from nav ul ul ul li a from mobile to desktop styles*/ }
+  @media (min-width: 64em) {
+    nav ul ul li ul a {
+      color: black; } }
+
+/*End of nav section-mobil and universal styles*/
+/*Style for label tag for Desktop(deta var den enda som vile fungerara med breakpoints vet inte varför)*/
+@media (min-width: 64em) {
+  label {
+    display: none; } }
+
+/*Style for h1 tag in class main-header*/
+.main-header h1 {
+  /*Style for h1 tag in class main-header for Desktop*/ }
+  @media (min-width: 64em) {
+    .main-header h1 {
+      text-align: start;
+      height: 0; } }
+
+/*Style-settings for mobile-checkbox*/
+.Hidden-on-desktop {
+  /*Style-settings for mobile-checkbox when in desktop*/ }
+  @media (min-width: 64em) {
+    .Hidden-on-desktop {
+      display: none; } }
+
+/*Style for class Nav-Slash*/
+.Nav-Slash {
+  /*Style for class Nav-Slash for Desktop*/ }
+  @media (min-width: 64em) {
+    .Nav-Slash {
+      align-self: center; } }
+
+/*Style-hover-settings for submenus submenu*/
+nav ul ul li:hover ul {
+  /*Style-hover-settings for submenus submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul ul li:hover ul {
+      display: block;
+      position: absolute;
+      width: 130px;
+      left: 130px;
+      top: 0px; } }
+
+/*Style-hover-settings for last submenus submenu*/
+nav ul li:last-child ul li:hover ul {
+  /*Style-hover-settings for last submenus submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li:last-child ul li:hover ul {
+      display: block;
+      position: absolute;
+      width: 130px;
+      left: -130px;
+      top: 0px; } }
+
+/*Style-settings for submenu*/
+nav ul ul li {
+  /*Style-settings for submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul ul li {
+      position: relative;
+      display: none;
+      width: 130px;
+      height: 40px;
+      line-height: 40px; } }
+
+/*style for ul li in class megamenu*/
+nav ul li .megamenu ul li {
+  /*style for ul li in class megamenu for desktop*/
+  display: block;
+  color: black;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  line-height: 40px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+/*Style-settings for submenus submenu*/
+nav ul ul ul {
+  /*Style-settings for submenus submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul ul ul {
+      display: none; } }
+
+/*style for ul in class megamenu*/
+nav ul li .megamenu ul {
+  /*style for ul in class megamenu for desktop*/
+  display: block;
+  flex: 1 1 33%;
+  margin-bottom: 20px;
+  color: #000;
+  box-shadow: none; }
+
+/*Style-hover-settings for submenu*/
+nav ul li:hover ul li {
+  /*Style-hover-settings for submenu for Desktop*/ }
+  @media (min-width: 64em) {
+    nav ul li:hover ul li {
+      display: block; } }
