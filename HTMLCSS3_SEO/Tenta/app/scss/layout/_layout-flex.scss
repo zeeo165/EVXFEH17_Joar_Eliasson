@@ -1,0 +1,19 @@
+/*behövde göra de så här ville anars inte fungera som deet skulle*/
+header a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

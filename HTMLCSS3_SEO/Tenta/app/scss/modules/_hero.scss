@@ -1,0 +1,21 @@
+.hero{
+    background: url('scotland.png');
+    width: 100%;
+    background-size: 100% 100%;
+
+    &-title{   
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.sub-title{ 
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

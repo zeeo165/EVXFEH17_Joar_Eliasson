@@ -1,0 +1,61 @@
+.main-content{
+    min-height: 100vh;
+    margin-bottom: 1em;
+    @include respond-to('large') {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        }
+}
+
+.portfolio-item{
+    background: black;
+    background-position: top left;
+    background-size: 100% 100%;
+    z-index: 10;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: 300ms;
+    &:hover{
+        color: white;
+    }
+}
+
+@include respond-to('large') {
+    .portfolio{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    }
+}
+
+@include respond-to('large') {
+    .small{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .medium{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .large{
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+
+    .tall{
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    .wide{
+        grid-row: 2;
+        grid-column:  3;
+    }
+}

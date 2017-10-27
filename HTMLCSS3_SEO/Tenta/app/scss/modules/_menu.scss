@@ -1,0 +1,68 @@
+header{
+    background: black;
+}
+
+h1{
+    color: yellow;
+    padding-top: 1.5em;
+}
+
+nav{
+    background: blue;
+    padding-top: 1.5em;
+ ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+   a{
+    color: #d0cfc5
+  }
+  
+   a:hover{
+    text-decoration:none;
+    color: red;
+  }  
+}
+
+@include respond-to('large') {
+    .toggle{
+        display: none;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+  @include respond-to('menu') {
+  /*off-canvas menu*/
+  #nav{
+    transition: transform .3s ease-in-out;
+      top: 0;
+      bottom: 0;   
+      min-height: 100vh; /* override Safari bug */
+      position: fixed; /* or choose `absolute` depending on desired behavior*/
+      width: 300px;
+      left: -340px; /*lägg menyn utanför skärmen -340px*/
+  }
+  
+  /*URL-adresser med en # följd av en ankare med namnlänk till ett visst element i ett dokument. Elementet som är länkas till är själva målelementet.
+  */
+    &:target {     
+      transform: translateX(340px);
+    }
+  
+    .close {
+      text-align: right;
+      display: block;
+      text-decoration: none;
+      font-size: 3em;
+      position: relative;
+      top: 0;
+    }    
+}

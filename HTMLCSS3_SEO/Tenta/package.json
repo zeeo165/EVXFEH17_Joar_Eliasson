@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6.git"
+    "url": "git+https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Tenta.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6/issues"
+    "url": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Tenta/issues"
   },
-  "homepage": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Inlamningar/inlamning6#readme",
+  "homepage": "https://github.com/zeeo165/EVXFEH17_Joar_Eliasson/tree/master/HTMLCSS3_SEO/Tenta#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",

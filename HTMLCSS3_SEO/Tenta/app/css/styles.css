@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px; }
+
+header {
+  background: black; }
+
+h1 {
+  color: yellow;
+  padding-top: 1.5em; }
+
+nav {
+  background: blue;
+  padding-top: 1.5em; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  nav a {
+    color: #d0cfc5; }
+  nav a:hover {
+    text-decoration: none;
+    color: red; }
+
+@media (min-width: 62em) {
+  .toggle {
+    display: none; }
+  ul {
+    display: flex;
+    justify-content: center; }
+    ul li {
+      padding-left: 1em;
+      padding-right: 1em; } }
+
+@media (max-width: 61.999em) {
+  /*off-canvas menu*/
+  #nav {
+    transition: transform .3s ease-in-out;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    /* override Safari bug */
+    position: fixed;
+    /* or choose `absolute` depending on desired behavior*/
+    width: 300px;
+    left: -340px;
+    /*lägg menyn utanför skärmen -340px*/ }
+  /*URL-adresser med en # följd av en ankare med namnlänk till ett visst element i ett dokument. Elementet som är länkas till är själva målelementet.
+  */
+  :target {
+    transform: translateX(340px); }
+  .close {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    font-size: 3em;
+    position: relative;
+    top: 0; } }
+
+.hero {
+  background: url("scotland.png");
+  width: 100%;
+  background-size: 100% 100%; }
+  .hero-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.sub-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main:first-child h1 {
+  font-size: 16px; }
+
+.card {
+  font-size: 14px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1.5em;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  grid-template-areas: "img title" "img content"; }
+
+.card h1 {
+  margin: 0;
+  font-weight: none;
+  color: black;
+  padding: 0;
+  font-size: 14px;
+  left: 0;
+  text-align: baseline; }
+
+.card-image {
+  grid-area: img; }
+
+.card-title {
+  grid-area: title; }
+
+.card-content {
+  grid-area: content; }
+
+.main-content {
+  min-height: 100vh;
+  margin-bottom: 1em; }
+  @media (min-width: 62em) {
+    .main-content {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px; } }
+
+.portfolio-item {
+  background: black;
+  background-position: top left;
+  background-size: 100% 100%;
+  z-index: 10;
+  padding: 1em;
+  margin-bottom: 1em;
+  transition: 300ms; }
+  .portfolio-item:hover {
+    color: white; }
+
+@media (min-width: 62em) {
+  .portfolio {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px; } }
+
+@media (min-width: 62em) {
+  .small {
+    grid-row: span 1;
+    grid-column: span 1; }
+  .medium {
+    grid-row: span 2;
+    grid-column: span 2; }
+  .large {
+    grid-row: span 3;
+    grid-column: span 3; }
+  .tall {
+    grid-row: span 3;
+    grid-column: span 2; }
+  .wide {
+    grid-row: 2;
+    grid-column: 3; } }
+
+footer {
+  background: blue; }
+
+/*behövde göra de så här ville anars inte fungera som deet skulle*/
+header a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
