@@ -1,0 +1,29 @@
+.footer{
+    //styling for class footer-header
+    &-header{
+        @include Underline;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    //styling for class footer-nav
+    &-nav{
+        list-style-type: none;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: auto auto;
+        li{
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        @include respond-to('medium'){
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 1em;
+        }
+        
+        @include respond-to('desktop'){
+            grid-template-columns: auto;
+            grid-gap: 1em;
+        }
+    }
+}

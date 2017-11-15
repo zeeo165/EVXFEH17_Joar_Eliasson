@@ -1,0 +1,26 @@
+.Gallary{
+    //styling for class Gallary-text
+    &-text{
+        text-align: center;
+        p{
+            margin: 0;
+        }
+        p:first-child{
+            margin-top: 1em;
+        }
+        p:last-child{
+            margin-bottom: 1em;
+        }
+    }
+    //styling for class Gallary-images
+    &-images{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1em;
+
+        @include respond-to('medium'){
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 1em;
+        }
+    }
+}

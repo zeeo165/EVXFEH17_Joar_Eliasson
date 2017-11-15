@@ -1,0 +1,147 @@
+.hero{
+    //style for hero-image class
+    &-image{
+        border: 1em solid black;
+        img{
+            max-height: 25em;
+            height: 100%
+        }
+    }
+    //style for hero-text class
+    &-text{
+        //mix to give postion to text
+        @include postion_text_hero;
+        .text1{
+            font-size: 5vw;
+            margin: 0;
+            //mix to give underline
+            @include Underline;
+            border-bottom-width: 2px;
+        }
+        .text2{
+            font-size: 10vw;
+            padding: 0;
+            margin: 0;
+        }
+        .text2:last-child{
+        color:white;
+        }
+/*start of Code to try to fix the text*/
+        @include respond-to('small'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: -170px;
+        }
+
+        @include respond-to('small+'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: -190px;
+        }
+
+        @include respond-to('medium-'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: -220px;
+        }
+
+        @include respond-to('medium+'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: -200px;
+
+            .text1{
+                font-size: 4vw;
+            }
+            .text2{
+                font-size: 9vw;
+            }
+        }
+
+        @include respond-to('large'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: 100px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 4vw;
+            }
+            .text2{
+                font-size: 7vw;
+            }
+        }
+
+        @include respond-to('large+'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: 60px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 4vw;
+            }
+            .text2{
+                font-size: 7vw;
+            }
+        }
+
+        @include respond-to('desktop-'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: 30px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 4vw;
+            }
+            .text2{
+                font-size: 7vw;
+            }
+        }
+
+        @include respond-to('desktop-'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: 0px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 4vw;
+            }
+            .text2{
+                font-size: 7vw;
+            }
+        }
+
+        @include respond-to('desktop'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            bottom: 110px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 2.5vw;
+            }
+            .text2{
+                font-size: 4.5vw;
+            }
+        }
+
+        @include respond-to('desktop+'){
+            //mix to give postion to text
+            @include postion_text_hero;
+            left: 21%;
+            bottom: 60px;
+            display: grid;
+            grid-template-columns: 30em;
+            .text1{
+                font-size: 2.5vw;
+            }
+            .text2{
+                font-size: 4.5vw;
+            }
+        }
+/*end of Code to try to fix the text*/
+    }
+}

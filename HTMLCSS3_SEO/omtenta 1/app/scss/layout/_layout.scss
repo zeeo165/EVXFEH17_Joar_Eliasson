@@ -1,0 +1,148 @@
+//styling setting for class container mobil
+.container{
+    display: block;
+//styling setting for class container tablet
+    @include respond-to('medium'){
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo logo logo"
+        "advert advert advert advert advert"
+        "hero hero hero hero hero"
+        "gallary gallary gallary gallary gallary"
+        "footer footer footer footer footer"
+        ;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .advert{
+            grid-area: advert;
+            display: grid;
+            grid-template-areas: 
+            "advert-text1 advert-text1 advert-text2 advert-text2 advert-text2"
+            ;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 1em;
+            &-text1{
+                    grid-area: advert-text1;
+                    text-align: right;
+            }
+            &-text2{
+                grid-area: advert-text2;
+            }
+        }
+
+        .hero{
+            grid-area: hero;
+        }
+
+        .Gallary{
+            grid-area: gallary;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    }
+//styling setting for class container smaller desktop
+    @include respond-to('large'){
+        display: grid;
+        grid-template-areas: 
+        "logo logo . . . . . advert advert advert"
+        "hero hero hero hero hero hero hero advert advert advert"
+        "gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary"
+        "footer footer footer footer footer footer footer footer footer footer"
+        ;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .advert{
+            grid-area: advert;
+            display: grid;
+            grid-template-areas: 
+            "advert-text1"
+            "advert-text2"
+            ;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 1em;
+            &-text1{
+                    grid-area: advert-text1;
+                    text-align: right;
+            }
+            &-text2{
+                grid-area: advert-text2;
+            }
+        }
+
+        .hero{
+            grid-area: hero;
+        }
+
+        .Gallary{
+            grid-area: gallary;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    }
+//styling setting for class container desktop
+    @include respond-to('desktop'){
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo . . . . advert advert advert"
+        "footer footer hero hero hero hero hero advert advert advert"
+        "footer footer gallary gallary gallary gallary gallary gallary gallary gallary"
+        ;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .advert{
+            grid-area: advert;
+            display: grid;
+            grid-template-areas: 
+            "advert-text1"
+            "advert-text2"
+            ;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 1em;
+            &-text1{
+                    grid-area: advert-text1;
+                    text-align: right;
+            }
+            &-text2{
+                grid-area: advert-text2;
+            }
+        }
+
+        .hero{
+            grid-area: hero;
+        }
+
+        .Gallary{
+            grid-area: gallary;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    }
+}

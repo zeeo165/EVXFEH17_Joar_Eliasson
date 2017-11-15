@@ -1,0 +1,63 @@
+//styling for class post-text
+.post-text{
+    font-size: 7.1vw;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.25em; 
+}
+//styling for class logo
+    .logo{
+        text-align: center;
+        border: 2px solid black;
+        //styling for class logo-text1
+        &-text1{
+            display:block;
+            //mix to give underline
+            @include Underline;
+            font-size: 14px 7.1vw;
+        }
+        //styling for class logo-text2
+        &-text2{
+            display: block;
+            //mix to give underline
+            @include Underline;
+            font-style: oblique;
+            font-size: 18px;
+        }
+    }
+    //styling for class advert
+    .advert{
+        //styling for class advert-text1
+        &-text1{
+            text-align: center;
+            //styling for class text1
+            .text1{
+                font-size: 70px;
+                margin:0;
+            }
+            //styling for class text2
+            .text2{
+                margin: 0;
+            }
+        }
+        //styling for class advert-text2
+        &-text2{
+            font-family: $font-MW;
+            font-size:$font-size-advert-text2; 
+            //styling for class btn
+            .btn{
+                text-align: center;
+                border: 2px black solid;
+                padding: 1em;
+                margin-bottom:1em;
+                //styling for class btn-default
+                &-default{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }

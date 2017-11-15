@@ -1,0 +1,13 @@
+//style for body
+body{
+    //mix to give gradinet background color
+    @include background_color;
+    max-width: 80em;
+    padding: 0; 
+    margin: 0 auto; 
+}
+//style for img tag
+img{
+    width: 100%;
+    height: auto;
+}

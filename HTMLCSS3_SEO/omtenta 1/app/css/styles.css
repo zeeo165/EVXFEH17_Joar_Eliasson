@@ -1,0 +1,323 @@
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+body {
+  background: linear-gradient(to bottom right, #66ffff 0%, #ffffff 100%);
+  max-width: 80em;
+  padding: 0;
+  margin: 0 auto; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.post-text {
+  font-size: 7.1vw;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 15px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.25em; }
+
+.logo {
+  text-align: center;
+  border: 2px solid black; }
+  .logo-text1 {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    line-height: 10px;
+    font-size: 14px 7.1vw; }
+  .logo-text2 {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    line-height: 10px;
+    font-style: oblique;
+    font-size: 18px; }
+
+.advert-text1 {
+  text-align: center; }
+  .advert-text1 .text1 {
+    font-size: 70px;
+    margin: 0; }
+  .advert-text1 .text2 {
+    margin: 0; }
+
+.advert-text2 {
+  font-family: Merriweather;
+  font-size: 14px; }
+  .advert-text2 .btn {
+    text-align: center;
+    border: 2px black solid;
+    padding: 1em;
+    margin-bottom: 1em; }
+    .advert-text2 .btn-default {
+      color: black;
+      text-decoration: none; }
+
+.hero-image {
+  border: 1em solid black; }
+  .hero-image img {
+    max-height: 25em;
+    height: 100%; }
+
+.hero-text {
+  position: absolute;
+  right: 15%;
+  bottom: -150px;
+  left: 6%;
+  /*start of Code to try to fix the text*/
+  /*end of Code to try to fix the text*/ }
+  .hero-text .text1 {
+    font-size: 5vw;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    line-height: 10px;
+    border-bottom-width: 2px; }
+  .hero-text .text2 {
+    font-size: 10vw;
+    padding: 0;
+    margin: 0; }
+  .hero-text .text2:last-child {
+    color: white; }
+  @media (min-width: 37.5em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: -170px; } }
+  @media (min-width: 41.25em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: -190px; } }
+  @media (min-width: 43.75em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: -220px; } }
+  @media (min-width: 50em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: -200px; }
+      .hero-text .text1 {
+        font-size: 4vw; }
+      .hero-text .text2 {
+        font-size: 9vw; } }
+  @media (min-width: 52.5em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: 100px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 4vw; }
+      .hero-text .text2 {
+        font-size: 7vw; } }
+  @media (min-width: 57.5em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: 60px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 4vw; }
+      .hero-text .text2 {
+        font-size: 7vw; } }
+  @media (min-width: 63.125em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: 30px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 4vw; }
+      .hero-text .text2 {
+        font-size: 7vw; } }
+  @media (min-width: 63.125em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: 0px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 4vw; }
+      .hero-text .text2 {
+        font-size: 7vw; } }
+  @media (min-width: 68.75em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      bottom: 110px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 2.5vw; }
+      .hero-text .text2 {
+        font-size: 4.5vw; } }
+  @media (min-width: 76.875em) {
+    .hero-text {
+      position: absolute;
+      right: 15%;
+      bottom: -150px;
+      left: 6%;
+      left: 21%;
+      bottom: 60px;
+      display: grid;
+      grid-template-columns: 30em; }
+      .hero-text .text1 {
+        font-size: 2.5vw; }
+      .hero-text .text2 {
+        font-size: 4.5vw; } }
+
+.Gallary-text {
+  text-align: center; }
+  .Gallary-text p {
+    margin: 0; }
+  .Gallary-text p:first-child {
+    margin-top: 1em; }
+  .Gallary-text p:last-child {
+    margin-bottom: 1em; }
+
+.Gallary-images {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em; }
+  @media (min-width: 46.875em) {
+    .Gallary-images {
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 1em; } }
+
+.footer-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  line-height: 10px;
+  list-style-type: none;
+  text-decoration: none; }
+
+.footer-nav {
+  list-style-type: none;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto auto; }
+  .footer-nav li {
+    list-style-type: none;
+    text-decoration: none; }
+  @media (min-width: 46.875em) {
+    .footer-nav {
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 1em; } }
+  @media (min-width: 68.75em) {
+    .footer-nav {
+      grid-template-columns: auto;
+      grid-gap: 1em; } }
+
+.container {
+  display: block; }
+  @media (min-width: 46.875em) {
+    .container {
+      display: grid;
+      grid-template-areas: "logo logo logo logo logo" "advert advert advert advert advert" "hero hero hero hero hero" "gallary gallary gallary gallary gallary" "footer footer footer footer footer";
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em; }
+      .container .logo {
+        grid-area: logo; }
+      .container .advert {
+        grid-area: advert;
+        display: grid;
+        grid-template-areas: "advert-text1 advert-text1 advert-text2 advert-text2 advert-text2";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em; }
+        .container .advert-text1 {
+          grid-area: advert-text1;
+          text-align: right; }
+        .container .advert-text2 {
+          grid-area: advert-text2; }
+      .container .hero {
+        grid-area: hero; }
+      .container .Gallary {
+        grid-area: gallary; }
+      .container footer {
+        grid-area: footer; } }
+  @media (min-width: 52.5em) {
+    .container {
+      display: grid;
+      grid-template-areas: "logo logo . . . . . advert advert advert" "hero hero hero hero hero hero hero advert advert advert" "gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary" "footer footer footer footer footer footer footer footer footer footer";
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em; }
+      .container .logo {
+        grid-area: logo; }
+      .container .advert {
+        grid-area: advert;
+        display: grid;
+        grid-template-areas: "advert-text1" "advert-text2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; }
+        .container .advert-text1 {
+          grid-area: advert-text1;
+          text-align: right; }
+        .container .advert-text2 {
+          grid-area: advert-text2; }
+      .container .hero {
+        grid-area: hero; }
+      .container .Gallary {
+        grid-area: gallary; }
+      .container footer {
+        grid-area: footer; } }
+  @media (min-width: 68.75em) {
+    .container {
+      display: grid;
+      grid-template-areas: "logo logo logo . . . . advert advert advert" "footer footer hero hero hero hero hero advert advert advert" "footer footer gallary gallary gallary gallary gallary gallary gallary gallary";
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em; }
+      .container .logo {
+        grid-area: logo; }
+      .container .advert {
+        grid-area: advert;
+        display: grid;
+        grid-template-areas: "advert-text1" "advert-text2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; }
+        .container .advert-text1 {
+          grid-area: advert-text1;
+          text-align: right; }
+        .container .advert-text2 {
+          grid-area: advert-text2; }
+      .container .hero {
+        grid-area: hero; }
+      .container .Gallary {
+        grid-area: gallary; }
+      .container footer {
+        grid-area: footer; } }
