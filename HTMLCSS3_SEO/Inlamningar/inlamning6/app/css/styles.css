@@ -160,18 +160,13 @@ CSS Grid layout for wider screens, when browser supports grid:
         display: grid;
         margin: 0 auto;
         grid-template-columns: auto auto;
-        grid-template-areas: "img1 img1"
- "img2 img3"
- "img4 img5"
- "img6 img7"; } }
+        grid-template-areas: "img1 img1" "img2 img3" "img4 img5" "img6 img7"; } }
     @media (min-width: 64em) {
       .imgs {
         display: grid;
         margin: 0 auto;
         grid-template-columns: auto auto auto auto auto;
-        grid-template-areas: "img1 img2 img2 img4 img4"
- "img3 img2 img2 img6 img6"
- "img5 img5 img7 img6 img6"; } }
+        grid-template-areas: "img1 img2 img2 img4 img4" "img3 img2 img2 img6 img6" "img5 img5 img7 img6 img6"; } }
   /*Style-settings for class img. version-for-grid*/
   .img {
     padding-top: 1em;

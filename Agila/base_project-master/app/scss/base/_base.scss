@@ -1,0 +1,32 @@
+
+//Modern border-box applied everywhere.
+html {
+  box-sizing: border-box;
+}
+
+// inherit box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// set upp body color
+body{
+  color: map-get($color, bright);
+  background: map-get($color, accent1);
+  @include page-bg ('../images/beaver.jpg');
+}
+
+body a:link{
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;		
+}
+
+
+
+

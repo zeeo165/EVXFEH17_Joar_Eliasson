@@ -1,0 +1,337 @@
+
+
+///Style-settings for class main-header. mobil-and-tablet///
+.main-header{
+    text-align:center;
+}
+///Style-settings for class megamenu in class main-header. mobil-and-tablet///
+.main-header .megamenu{
+    text-align: start;
+}
+///Style-settings for id nav-toggle///
+#nav-toggle{
+    display:none;
+}
+///start of Style-settings for checkboxes///
+.Hidden-on-mobile{
+    display:none;
+    ///Style-settings for mobile-checkbox when in desktop///
+    @include respond-to('large') {
+        display:flex;
+    }
+}
+#nav-toggle-submenu1{
+    display:none;
+}
+#nav-toggle-submenu2{
+    display:none;
+}
+#nav-toggle-submenu3{
+    display:none;
+}
+#nav-toggle-submenu4{
+    display:none;
+}
+#nav-toggle-submenu5{
+    display:none;
+}
+///End of Style-settings for checkboxes///
+
+///Style-settings for when you click, click me label (#nav-toggle:checked + #wrapper nav)///
+#nav-toggle:checked + #wrapper nav{
+    display:block;
+}
+///Style-settings for when you click, Meny1 label (#nav-toggle-submenu1:checked + #wrapper ul)///
+#nav-toggle-submenu1:checked + #wrapper ul{
+    display:block;
+}
+///Style-settings for when you click, Meny2 label (#nav-toggle-submenu2:checked + #wrapper ul)///
+#nav-toggle-submenu2:checked + #wrapper ul{
+    display:block;
+}
+///Style-settings for when you click, Meny3 label (#nav-toggle-submenu3:checked + #wrapper ul///
+#nav-toggle-submenu3:checked + #wrapper ul{
+    display:block;
+}
+///Style-settings for when you click, Meny4 label (#nav-toggle-submenu4s:checked + #wrapper ul)///
+#nav-toggle-submenu4:checked + #wrapper ul{
+    display:block;
+}
+///Style-settings for when you click, Meny5 label (#nav-toggle-submenu5:checked + #wrapper ul)///
+#nav-toggle-submenu5:checked + #wrapper ul{
+     display:block;
+}
+///style for class submenu///
+    .submenu{
+        display:block;
+        font-family: merriweather;
+        font-weight: bold;
+        font-size:12pt;
+        color: whitesmoke;
+        ///Style for class submenu for Desktop///
+        @include respond-to('large') {
+            display:flex;
+            justify-content: center;
+            color: black;
+        }
+    }
+    ///style for class submenu hover mode///
+    .submenu:hover{
+        color: rgba(255, 255, 255, 0.726);
+    }
+    ///Style for a tag in class submenu///
+    .submenu a{
+        ///Style for a tag in class submenu for Desktop///
+        @include respond-to('large') {
+        width: 100px;
+        height: 40px;
+        color: black;
+        }
+    }
+    
+///Style-settings for nav tag///
+nav{
+    display:none;
+    text-transform: uppercase;
+///style for nav for Desktop///
+    @include respond-to('large') {
+        display:block;  
+       margin-top: -1.5em;
+    }
+}
+///style for nav ul ul for mobile ///
+nav ul ul{
+    display:none;
+    @include respond-to('large') {
+        display:flex;  
+    }
+}
+///extendchen with the color whitesomke///
+%whitesmoke{
+    color: whitesmoke;
+}
+///Style for a in nav mobile size///
+nav a{
+    
+    font-family: merriweather;
+    font-weight: bold;
+    font-size:10pt;
+    @extend %whitesmoke;
+///style for the a tag in nav for Desktop///
+    @include respond-to('large') {
+        color: white;
+        display:flex;
+        justify-content: center;
+    }
+}
+///style for the a tag in class megamenu///
+nav ul li .megamenu li a{
+    padding-left:2.5em ;
+    ///style for the a tag in class megamenu for desktop///
+    @include respond-to('large') {
+        padding-left: 0;
+    font-family: none;
+    font-weight: bold;
+    font-size:11pt;
+    color: whitesmoke;
+    display:flex;
+    justify-content: flex-start;
+    }
+}
+///style for the h4 tag in class megamenu///
+nav ul li .megamenu h4{
+    @include respond-to('large') {
+    color: whitesmoke; 
+    }
+}
+
+
+///Style for a:hover mod in nav mobile size///
+nav a:hover{
+    color: rgba(255, 255, 255, 0.726);
+    ///style for the a:hover mode in nav for Desktop ///
+    @include respond-to('large') {
+        color: black;
+    }
+}
+///Style for ul in nav mobile size///
+nav ul{
+    list-style: none;
+
+/// style for the ul tag in nav for Desktop///
+    @include respond-to('large') {
+
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5%;
+        background-color:transparent;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+}
+///style for class megamenu///
+nav ul li .megamenu{
+    ///style for class megamenu for desktop///
+    @include respond-to('large') {
+        position: absolute;
+        margin-bottom: 0;
+        display: none;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 1200px;
+        left: 20em;
+        padding: 40px 40px 0 40px;
+        background: #000000;
+        text-align: left;
+        border-top: 5px solid #5e5e5e;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}
+///style for class megamenu when hovering///
+nav ul li:hover ul.megamenu{
+    ///style for class megamenu when hovering for desktop///
+    @include respond-to('large') {
+    display: flex;
+    }
+}
+
+///Style for ul li in nav mobile size///
+nav ul li{
+    background-color: rgb(73, 73, 73);
+    line-height: 40px;
+///style for li in the nav ul for Desktop///
+    @include respond-to('large') {
+        color: black;
+        background-color: white;
+         width: 130px;
+         height:40px;
+         line-height: 40px;
+         padding-left:0px;
+         padding-right: 0px;
+       }
+}
+
+///Style for ul li ul li a in nav mobile size///
+nav ul li ul li a{
+    color:rgb(0, 0, 0);
+    font-size: 16px; 
+///change styles from nav ul li ul li a from mobile to desktop styles///
+    @include respond-to('large') {
+        color:black;
+        }
+}
+///style for ul ul li ul a mobile size///
+nav ul ul li ul a{
+    color:rgb(141, 141, 141);
+    font-size: 13px;
+///change styles from nav ul ul ul li a from mobile to desktop styles///
+    @include respond-to('large') {
+        color:black;
+        }
+}
+///End of nav section-mobil and universal styles///
+
+    ///Style for label tag for Desktop(deta var den enda som vile fungerara med breakpoints vet inte varför)///
+    label{
+        @include respond-to('large') {
+        display:none;
+        }
+    }
+    ///Style for h1 tag in class main-header///
+.main-header h1{
+       ///Style for h1 tag in class main-header for Desktop///
+    @include respond-to('large') {
+    text-align: start;
+    height: 0;
+    }
+}
+///Style-settings for mobile-checkbox///
+.Hidden-on-desktop{
+    ///Style-settings for mobile-checkbox when in desktop///
+    @include respond-to('large') {
+    display:none;
+    }
+}
+///Style for class Nav-Slash///
+.Nav-Slash{
+    ///Style for class Nav-Slash for Desktop///
+    @include respond-to('large') {
+    align-self: center;
+    }
+}
+///Style-hover-settings for submenus submenu///
+nav ul ul li:hover ul{
+    ///Style-hover-settings for submenus submenu for Desktop///
+    @include respond-to('large') {
+        display:block;
+        position: absolute;
+        width: 130px;
+        left: 130px;
+        top:0px;
+    }
+   }
+///Style-hover-settings for last submenus submenu///
+   nav ul li:last-child ul li:hover ul{
+       ///Style-hover-settings for last submenus submenu for Desktop///
+    @include respond-to('large') {
+    display:block;
+    position: absolute;
+    width: 130px;
+    left: -130px;
+    top:0px;
+    }
+}
+///Style-settings for submenu///
+   nav ul ul li{
+       ///Style-settings for submenu for Desktop///
+    @include respond-to('large') {
+       position: relative;
+       display:none;
+       width: 130px;
+       height:40px;
+       line-height: 40px;
+    }
+   }
+   ///style for ul li in class megamenu///
+   nav ul li .megamenu ul li{
+       ///style for ul li in class megamenu for desktop///
+    display:block;
+    color: black;
+    background-color: transparent;
+     width: 100%;
+     height:auto;
+     line-height: 40px;
+     padding-left:0px;
+     padding-right: 0px;
+   }
+///Style-settings for submenus submenu///
+   nav ul ul ul{
+       ///Style-settings for submenus submenu for Desktop///
+    @include respond-to('large') {
+        display:none;
+    }
+   }
+   ///style for ul in class megamenu///
+   nav ul li .megamenu ul{
+          ///style for ul in class megamenu for desktop///
+    display:block;
+    flex: 1 1 33%;
+    margin-bottom: 20px;
+    color: #000;
+    box-shadow: none;
+   }
+
+///Style-hover-settings for submenu///
+   nav ul li:hover ul li {
+///Style-hover-settings for submenu for Desktop///
+    @include respond-to('large') {
+       display:block;
+   }
+}
+
+.logo{
+    margin-top: 1em;
+    font-size: 2em;
+}
